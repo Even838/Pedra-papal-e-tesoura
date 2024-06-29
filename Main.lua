@@ -1,7 +1,11 @@
 print("1 para pedra, 2 para papel e 3 para tesoura")
-ec = tonumber(io.read())
+local lop = 1
+-- criando lop principal 
+while lop<5 do
+  ec = tonumber(io.read())
 
 ia = math.random(1, 3)
+
 
 if ec == 1 then
     if ia == 2 then
@@ -29,4 +33,5 @@ elseif ec == 3 then
     end
 else
     print('Escolha inválida. Digite 1, 2 ou 3 para pedra, papel ou tesoura, respectivamente.')
+end
 end
